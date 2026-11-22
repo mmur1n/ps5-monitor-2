@@ -11,6 +11,8 @@ from urllib.request import Request, urlopen
 
 from .source import SOURCE_URL, SourceError, scan
 
+ALERT_STATUSES = {"in_stock", "stock_conflict"}
+
 
 def now():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -40,7 +42,7 @@ def reconcile(previous, observations, timestamp):
         if changed:
             events.append({"id": f'{item["id"]}:{timestamp}', "productId": item["id"],
                            "name": item["name"], "status": item["status"], "at": timestamp,
-                           "notify": item["status"] == "in_stock" and last != "in_stock",
+                           "notify": item["status"] in ALERT_STATUSES and last != item["status"],
                            "sentAt": None})
         products.append(item)
     # A listing disappearing is not evidence of stock becoming available/unavailable.
@@ -75,7 +77,7 @@ def notify(state, token, chat_id, send=send_telegram, test=False):
         message = ("🎮 Мониторинг дисковых PS5 подключён.\n"
                    "Проверка каждые 5 минут (возможны задержки GitHub).\n"
                    "Digital и PS5 Pro без дисковода исключены.\n"
-                   "Уведомлю, когда консоль появится в наличии и станет доступна покупка.\n\n" + panel)
+                   "Уведомлю о наличии и о доступной покупке при отметке «нет в наличии».\n\n" + panel)
         if send(token, chat_id, message):
             telegram["welcomeSentAt"] = now()
             telegram["lastSentAt"] = now()
@@ -87,14 +89,20 @@ def notify(state, token, chat_id, send=send_telegram, test=False):
         if not event.get("notify") or event.get("sentAt") or event.get("cancelled"):
             continue
         product = products.get(event["productId"])
-        if not product or product["status"] not in ("in_stock", "unknown"):
+        if (not product or product["status"] not in ALERT_STATUSES | {"unknown"}
+                or product["status"] != "unknown" and product["status"] != event["status"]):
             event["cancelled"] = True
             continue
         if product["status"] == "unknown" or state.get("health") == "error":
             continue
-        message = (f'🟢 PS5 с дисководом доступна!\n\n{product["name"]}\n'
+        if product["status"] == "stock_conflict":
+            headline = "⚠️ PS5: покупка доступна при отметке «нет в наличии»!"
+            explanation = "\n\nДанные магазина противоречат друг другу. Сайт разрешает покупку, но успех оформления заказа не проверялся."
+        else:
+            headline, explanation = "🟢 PS5 с дисководом доступна!", ""
+        message = (f'{headline}\n\n{product["name"]}\n'
                    f'{product.get("price") or "Цена на сайте"}\n\n{product["url"]}\n\n'
-                   f'Панель: {panel}')
+                   f'Панель: {panel}{explanation}')
         if send(token, chat_id, message):
             event["sentAt"] = now()
             telegram["lastSentAt"] = now()

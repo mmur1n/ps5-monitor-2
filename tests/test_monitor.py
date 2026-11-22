@@ -41,11 +41,35 @@ class SourceTests(unittest.TestCase):
     def test_contradictory_cta_is_shown_separately(self):
         self.assertEqual(parse_product(page(raw(), [{'type': 'UNAVAILABLE'}]), PID)['status'], 'blocked')
 
-    def test_out_of_stock_wins_over_cta(self):
-        self.assertEqual(parse_product(page(raw('OUT_OF_STOCK'), [{'type': 'ADD_TO_CART'}]), PID)['status'], 'out_of_stock')
+    def test_buyable_out_of_stock_is_a_stock_conflict(self):
+        self.assertEqual(parse_product(page(raw('OUT_OF_STOCK'), [{'type': 'ADD_TO_CART'}]), PID)['status'], 'stock_conflict')
 
-    def test_inventory_override_wins(self):
-        self.assertEqual(parse_product(page(raw(override='forceOutOfStock'), [{'type': 'ADD_TO_CART'}]), PID)['status'], 'out_of_stock')
+    def test_forced_out_of_stock_with_buy_cta_is_a_conflict(self):
+        result=parse_product(page(raw(override='forceOutOfStock'), [{'type': 'ADD_TO_CART'}]), PID)
+        self.assertEqual(result['status'], 'stock_conflict')
+        self.assertEqual(result['inventory'], 'out_of_stock')
+
+    def test_out_of_stock_without_buy_cta_is_not_a_conflict(self):
+        self.assertEqual(parse_product(page(raw('OUT_OF_STOCK')), PID)['status'], 'out_of_stock')
+
+    def test_buy_action_is_detected_when_inventory_is_empty(self):
+        cta={'type':'OTHER','action':{'type':'BUY_NOW'}}
+        self.assertEqual(parse_product(page(raw('OUT_OF_STOCK'), [cta]), PID)['status'], 'stock_conflict')
+
+    def test_hidden_buy_button_does_not_trigger_conflict(self):
+        cta={'type':'ADD_TO_CART','local':{'hideCta':True}}
+        self.assertEqual(parse_product(page(raw('OUT_OF_STOCK'), [cta]), PID)['status'], 'out_of_stock')
+
+    def test_unavailable_cta_wins_over_conflicting_buy_cta(self):
+        ctas=[{'type':'UNAVAILABLE'},{'type':'ADD_TO_CART'}]
+        self.assertEqual(parse_product(page(raw('OUT_OF_STOCK'), ctas), PID)['status'], 'out_of_stock')
+
+    def test_unknown_inventory_is_not_reported_as_empty(self):
+        self.assertEqual(parse_product(page(raw('UNKNOWN'), [{'type':'ADD_TO_CART'}]), PID)['status'], 'unknown')
+
+    def test_preorder_is_not_reported_as_a_buyable_stock_conflict(self):
+        cta={'type':'PRE_ORDER','action':{'type':'ADD_TO_CART'}}
+        self.assertEqual(parse_product(page(raw('OUT_OF_STOCK'), [cta]), PID)['status'], 'preorder')
 
     def test_other_product_cta_is_ignored(self):
         self.assertEqual(parse_product(page(raw(), [{'type': 'ADD_TO_CART'}], product_id='ANOTHER'), PID)['status'], 'unknown')
@@ -69,6 +93,46 @@ class SourceTests(unittest.TestCase):
 
 
 class NotificationTests(unittest.TestCase):
+    def test_stock_conflict_sends_one_warning_and_link(self):
+        details=parse_product(page(raw('OUT_OF_STOCK'),[{'type':'ADD_TO_CART'}]),PID)
+        state=reconcile({},[{**observation('stock_conflict'),**details}],'t1')
+        state['telegram']={'welcomeSentAt':'t0'}
+        sent=[];sender=lambda *a:sent.append(a[2]) or True
+        notify(state,'token','chat',send=sender)
+        state=reconcile(state,[observation('stock_conflict')],'t2')
+        notify(state,'token','chat',send=sender)
+        self.assertEqual(len(sent),1)
+        self.assertIn('⚠️',sent[0]);self.assertIn('нет в наличии',sent[0])
+        self.assertIn('https://www.playstation.com/',sent[0])
+        self.assertIn('успех оформления заказа не проверялся',sent[0])
+
+    def test_stock_conflict_recovery_after_unknown_does_not_repeat_alert(self):
+        state={}
+        for time,status in enumerate(['out_of_stock','stock_conflict','unknown','stock_conflict']):
+            state=reconcile(state,[observation(status)],str(time))
+        self.assertEqual(sum(e['notify'] for e in state['events']),1)
+
+    def test_restored_stock_after_conflict_sends_a_new_confirmed_alert(self):
+        state=reconcile({},[observation('stock_conflict')],'t1')
+        state=reconcile(state,[observation('in_stock')],'t2')
+        state['telegram']={'welcomeSentAt':'t0'}
+        sent=[];notify(state,'token','chat',send=lambda *a:sent.append(a[2]) or True)
+        self.assertEqual(len(sent),1);self.assertIn('🟢',sent[0])
+        self.assertTrue(state['events'][0]['cancelled'])
+
+    def test_stock_conflict_send_failure_is_retried(self):
+        state=reconcile({},[observation('stock_conflict')],'t1');state['telegram']={'welcomeSentAt':'t0'}
+        notify(state,'token','chat',send=lambda *a:False)
+        self.assertIsNone(state['events'][0]['sentAt'])
+        notify(state,'token','chat',send=lambda *a:True)
+        self.assertIsNotNone(state['events'][0]['sentAt'])
+
+    def test_new_conflict_after_purchase_is_disabled_sends_new_alert(self):
+        state={}
+        for time,status in enumerate(['stock_conflict','stock_conflict','out_of_stock','stock_conflict']):
+            state=reconcile(state,[observation(status)],str(time))
+        self.assertEqual(sum(e['notify'] for e in state['events']),2)
+
     def test_unknown_does_not_create_a_second_restock(self):
         state=reconcile({},[observation('in_stock')],'t1')
         state=reconcile(state,[observation('unknown')],'t2')

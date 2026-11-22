@@ -149,19 +149,26 @@ def parse_product(html, product_id):
     actions = {c.get("action", {}).get("type") for c in ctas}
     hidden = any(c.get("local", {}).get("hideCta") for c in ctas)
     stock = "in_stock" if "IN_STOCK" in inventory else "out_of_stock" if inventory == {"OUT_OF_STOCK"} else "unknown"
-    if "forceOutOfStock" in overrides or stock == "out_of_stock":
-        status, reason = "out_of_stock", "Нет в наличии у PlayStation"
-    elif types & {"UNAVAILABLE", "NOT_AVAILABLE"} or hidden:
+    if "forceOutOfStock" in overrides:
+        stock = "out_of_stock"
+    can_buy = bool(types & {"ADD_TO_CART", "BUY_NOW", "PURCHASE"}
+                   or actions & {"ADD_TO_CART", "BUY_NOW"})
+    if types & {"UNAVAILABLE", "NOT_AVAILABLE"} or hidden:
         status = "blocked" if stock == "in_stock" else "out_of_stock"
-        reason = "Магазин сообщает о запасе, но покупка недоступна" if status == "blocked" else "Покупка недоступна"
+        reason = "Отметка наличия есть, но покупка недоступна" if status == "blocked" else "Покупка недоступна"
     elif types & {"PRE_ORDER", "PREORDER"}:
         status, reason = "preorder", "Доступен предзаказ"
-    elif (types & {"ADD_TO_CART", "BUY_NOW", "PURCHASE"} or actions & {"ADD_TO_CART", "BUY_NOW"}) and stock == "in_stock":
+    elif can_buy and stock == "out_of_stock":
+        status, reason = "stock_conflict", "Сайт разрешает покупку при отметке «нет в наличии». Успех заказа не подтверждён."
+    elif can_buy and stock == "in_stock":
         status, reason = "in_stock", "Есть запас и доступна покупка"
+    elif stock == "out_of_stock":
+        status, reason = "out_of_stock", "Нет в наличии у PlayStation"
     else:
         status, reason = "unknown", "Не удалось подтвердить возможность покупки"
     return {"status": status, "reason": reason, "inventory": stock,
             "ctaTypes": sorted(t for t in types if t),
+            "ctaActions": sorted(a for a in actions if a),
             "price": next((s.get("displayPrice") for s in skus if s.get("displayPrice")), None)}
 
 
