@@ -8,18 +8,18 @@
   <title>PS5 Monitor — консоли с дисководом</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css?v=2">
-  <script src="app.js?v=2" defer></script>
+  <script src="app.js?v=3" defer></script>
 </head>
 <body>
   <header class="topbar"><a class="brand" href="./" aria-label="PS5 Monitor, главная"><span class="brand-icon" aria-hidden="true">◉</span> PS5<span>MONITOR</span></a><a class="source" href="https://www.playstation.com/de-de/consoles/ps5/shop-all/" target="_blank" rel="noopener">PlayStation · Германия</a></header>
   <main>
     <section class="hero">
-      <div><p class="eyebrow">КОНСОЛИ С ДИСКОВОДОМ</p><h1>Поймай свою PS5.</h1><p class="intro">Все дисковые версии и комплекты в одном месте. Когда консоль вернётся в продажу, бот сообщит в Telegram.</p><div class="hero-tags"><span>Проверки каждые 5 минут</span><span id="telegram-label">Telegram: проверяем настройку</span></div></div>
+      <div><p class="eyebrow">КОНСОЛИ С ДИСКОВОДОМ</p><h1>Поймай свою PS5.</h1><p class="intro">Все дисковые версии и комплекты в одном месте. Когда консоль вернётся в продажу, бот сообщит в Telegram.</p><div class="hero-tags"><span>Расписание: каждые 5 минут</span><span id="telegram-label">Telegram: проверяем настройку</span></div></div>
       <div class="overview"><span class="overview-label">ДОСТУПНО К ПОКУПКЕ</span><div><strong id="available-count">—</strong><span id="total-caption">загружаем консоли</span></div><p id="overview-note">Проверяем запас и возможность покупки</p></div>
     </section>
     <div id="notice" class="notice" role="status" hidden></div>
     <section aria-labelledby="catalogue-heading">
-      <div class="section-heading"><div><h2 id="catalogue-heading">Наличие консолей</h2><p id="checked-at" aria-live="polite">Загружаем последнюю проверку…</p></div><button id="refresh" class="refresh" type="button">Обновить данные</button></div>
+      <div class="section-heading"><div><h2 id="catalogue-heading">Наличие консолей</h2><p id="checked-at" aria-live="polite">Загружаем последнюю проверку…</p><p id="attempted-at"></p></div><button id="refresh" class="refresh" type="button">Обновить данные</button></div>
       <div class="controls"><div class="filters" role="group" aria-label="Фильтр по наличию"><button type="button" data-filter="all" aria-pressed="true">Все <span id="count-all">—</span></button><button type="button" data-filter="in_stock" aria-pressed="false">В наличии <span id="count-in_stock">—</span></button><button type="button" data-filter="stock_conflict" aria-pressed="false">Покупка без остатка <span id="count-stock_conflict">—</span></button><button type="button" data-filter="out_of_stock" aria-pressed="false">Нет в наличии <span id="count-out_of_stock">—</span></button><button type="button" data-filter="other" aria-pressed="false">Другие статусы <span id="count-other">—</span></button></div><label class="search"><span class="sr-only">Поиск консоли</span><input id="search" type="search" placeholder="Найти консоль или комплект"></label></div>
       <div class="catalogue-meta"><span id="results">Только PS5 с дисководом</span><label><input id="new-only" type="checkbox"> Скрыть восстановленные</label></div>
       <div id="products" class="products" aria-live="polite"><div class="empty">Загружаем данные магазина…</div></div>

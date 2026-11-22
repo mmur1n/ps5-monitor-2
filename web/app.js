@@ -11,8 +11,13 @@ function notice() {
   if (!snapshot) return;
   const messages=[];
   const age=snapshot.lastSuccessAt ? Date.now()-Date.parse(snapshot.lastSuccessAt) : Infinity;
+  const attemptAge=snapshot.attemptedAt ? Date.now()-Date.parse(snapshot.attemptedAt) : Infinity;
+  const elapsed=Number.isFinite(age) ? `${Math.max(0,Math.floor(age/60000))} мин назад` : 'ещё не было';
+  $('#checked-at').textContent=`Последняя полная проверка: ${date(snapshot.lastSuccessAt)} · Берлин · ${elapsed}`;
+  $('#attempted-at').textContent=snapshot.attemptedAt && snapshot.attemptedAt!==snapshot.lastSuccessAt ? `Последняя попытка: ${date(snapshot.attemptedAt)} · Берлин` : '';
   if (snapshot.health==='error') messages.push(snapshot.error || 'Ошибка проверки магазина.');
   else if (snapshot.health==='partial') messages.push(snapshot.error || 'Некоторые товары не удалось проверить.');
+  if (attemptAge>8*60*1000) messages.push('Проверка задерживается. Нового результата пока нет. GitHub запускает проверки по расписанию каждые 5 минут, но может задерживать или пропускать запуски.');
   if (age>20*60*1000) messages.push('Последняя полная проверка устарела. Статусы могут отличаться от магазина.');
   if (refreshFailed) messages.push('Не удалось загрузить новые данные панели. Показана сохранённая версия.');
   if (snapshot.telegram?.error) messages.push(snapshot.telegram.error);
@@ -27,7 +32,6 @@ function render() {
   $('#available-count').textContent=available+conflicts; $('#total-caption').textContent=`из ${active.length} консолей`;
   $('#overview-note').textContent=conflicts ? `С отметкой наличия: ${available} · покупка без остатка: ${conflicts}` : available ? 'Есть дисковые PS5, доступные к покупке' : 'Ждём возвращения дисковых PS5 в продажу';
   $('#telegram-label').textContent=snapshot.telegram?.configured ? snapshot.telegram.error ? 'Telegram: ошибка отправки' : snapshot.telegram.welcomeSentAt ? 'Telegram подключён' : 'Telegram: ожидает проверки' : 'Telegram: ожидает настройки';
-  $('#checked-at').textContent=`Последняя полная проверка: ${date(snapshot.lastSuccessAt)} · Берлин`;
   $('#count-all').textContent=active.length; $('#count-in_stock').textContent=available;
   $('#count-stock_conflict').textContent=conflicts;
   $('#count-out_of_stock').textContent=active.filter(p=>p.status==='out_of_stock').length; $('#count-other').textContent=other;
