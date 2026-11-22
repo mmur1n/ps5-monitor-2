@@ -1,0 +1,397 @@
+{
+  "products": [
+    {
+      "id": "PSD001-PSDE01835_51-PS5GOYGOLDYZWIJE",
+      "name": "PlayStation®5 Konsole - Ghost of Yōtei™ Gold Limited Edition Bundle (Modellgruppe - Slim)",
+      "url": "https://www.playstation.com/api/pdp-redirect/?id=PSD001-PSDE01835_51-PS5GOYGOLDYZWIJE&locale=de-de",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/PS5_D_LE_BNDL_GOY_GOLD_1x1-01-12nov26_us?$native--t$",
+      "refurbished": false,
+      "price": "€599,99",
+      "status": "out_of_stock",
+      "reason": "Нет в наличии у PlayStation",
+      "inventory": "out_of_stock",
+      "ctaTypes": [
+        "UNAVAILABLE"
+      ],
+      "error": null,
+      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "listed": true,
+      "lastKnownStatus": "out_of_stock",
+      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "changedAt": "2026-11-22T23:25:20+00:00"
+    },
+    {
+      "id": "PSD001-PSDE01840_63-PS5GRADEDCEC7XZE",
+      "name": "Generalüberholt und Zertifiziert PlayStation®5 Konsole",
+      "url": "https://www.playstation.com/api/pdp-redirect/?id=PSD001-PSDE01840_63-PS5GRADEDCEC7XZE&locale=de-de",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/Certified_Refurbished_PlayStation_5_Console_3D_1x1-01-24Apr26$en?$native--t$",
+      "refurbished": true,
+      "price": "€519,99",
+      "status": "blocked",
+      "reason": "Магазин сообщает о запасе, но покупка недоступна",
+      "inventory": "in_stock",
+      "ctaTypes": [
+        "UNAVAILABLE"
+      ],
+      "error": null,
+      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "listed": true,
+      "lastKnownStatus": "blocked",
+      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "changedAt": "2026-11-22T23:25:20+00:00"
+    },
+    {
+      "id": "PSD001-PSDE00233_59-PS5GRADEDCLIZSLE",
+      "name": "Generalüberholt und Zertifiziert PlayStation®5 Konsole (Modellgruppe - Slim)",
+      "url": "https://www.playstation.com/api/pdp-redirect/?id=PSD001-PSDE00233_59-PS5GRADEDCLIZSLE&locale=de-de",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/CertifiedRefurbishedPS5Console-3D-01-1x1-01-28feb26$en?$native--t$",
+      "refurbished": true,
+      "price": "€549,99",
+      "status": "out_of_stock",
+      "reason": "Нет в наличии у PlayStation",
+      "inventory": "out_of_stock",
+      "ctaTypes": [
+        "UNAVAILABLE"
+      ],
+      "error": null,
+      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "listed": true,
+      "lastKnownStatus": "out_of_stock",
+      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "changedAt": "2026-11-22T23:25:20+00:00"
+    },
+    {
+      "id": "PSD001-PSDE01929_59-PS5CONSOLETAPQ3E",
+      "name": "Paket: PlayStation®5 Konsole 1 TB - zwei DualSense® Wireless Controller",
+      "url": "https://www.playstation.com/api/pdp-redirect/?id=PSD001-PSDE01929_59-PS5CONSOLETAPQ3E&locale=de-de",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/PS52xDSWC_E_BNDL_RNDR_LT_PROD_RGB_ETCK_260316-1x1-01-9July26$en?$native--t$",
+      "refurbished": false,
+      "price": "€699,99",
+      "status": "blocked",
+      "reason": "Магазин сообщает о запасе, но покупка недоступна",
+      "inventory": "in_stock",
+      "ctaTypes": [
+        "UNAVAILABLE"
+      ],
+      "error": null,
+      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "listed": true,
+      "lastKnownStatus": "blocked",
+      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "changedAt": "2026-11-22T23:25:20+00:00"
+    },
+    {
+      "id": "PSD001-PSDE01835_51-PS5CONSOLEXQCDWE",
+      "name": "Paket: PlayStation®5 Konsole + zwei DualSense™ Wireless Controller (Modellgruppe - Slim)",
+      "url": "https://www.playstation.com/api/pdp-redirect/?id=PSD001-PSDE01835_51-PS5CONSOLEXQCDWE&locale=de-de",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/PS52xDSWC_E_BNDL_RNDR_LT_PROD_RGB_ETCK_260316-1x1-01-9July26$en?$native--t$",
+      "refurbished": false,
+      "price": "€609,99",
+      "status": "out_of_stock",
+      "reason": "Нет в наличии у PlayStation",
+      "inventory": "out_of_stock",
+      "ctaTypes": [
+        "UNAVAILABLE"
+      ],
+      "error": null,
+      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "listed": true,
+      "lastKnownStatus": "out_of_stock",
+      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "changedAt": "2026-11-22T23:25:20+00:00"
+    },
+    {
+      "id": "PSD001-PSDE01929_59-PS5CONSOLEHB2OYE",
+      "name": "PlayStation®5 Konsole - 1 TB",
+      "url": "https://www.playstation.com/api/pdp-redirect/?id=PSD001-PSDE01929_59-PS5CONSOLEHB2OYE&locale=de-de",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/PS5Console-CFI2100-06-1x1-01-09apr26$en?$native--t$",
+      "refurbished": false,
+      "price": "€649,99",
+      "status": "blocked",
+      "reason": "Магазин сообщает о запасе, но покупка недоступна",
+      "inventory": "in_stock",
+      "ctaTypes": [
+        "UNAVAILABLE"
+      ],
+      "error": null,
+      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "listed": true,
+      "lastKnownStatus": "blocked",
+      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "changedAt": "2026-11-22T23:25:20+00:00"
+    },
+    {
+      "id": "PSD001-PSDE01929_59-PS5CONSOLEKOMN4E",
+      "name": "PlayStation®5 Konsole 1 TB - EA SPORTS FC™ 26 Bundle",
+      "url": "https://www.playstation.com/api/pdp-redirect/?id=PSD001-PSDE01929_59-PS5CONSOLEKOMN4E&locale=de-de",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/EAFC_PlayStation5Console-3D-1x1-01-11sep26_en?$native--t$",
+      "refurbished": false,
+      "price": "€549,99",
+      "status": "out_of_stock",
+      "reason": "Нет в наличии у PlayStation",
+      "inventory": "out_of_stock",
+      "ctaTypes": [
+        "UNAVAILABLE"
+      ],
+      "error": null,
+      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "listed": true,
+      "lastKnownStatus": "out_of_stock",
+      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "changedAt": "2026-11-22T23:25:20+00:00"
+    },
+    {
+      "id": "PSD001-PSDE01929_59-PS5CONSOLETBMPGE",
+      "name": "PlayStation®5 Konsole 1 TB - Fortnite Blühendes Chaos Bundle",
+      "url": "https://www.playstation.com/api/pdp-redirect/?id=PSD001-PSDE01929_59-PS5CONSOLETBMPGE&locale=de-de",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/Fortnite_PlayStation5Console-3D-1x1-01-11sep26_en?$native--t$",
+      "refurbished": false,
+      "price": "€549,99",
+      "status": "out_of_stock",
+      "reason": "Нет в наличии у PlayStation",
+      "inventory": "out_of_stock",
+      "ctaTypes": [
+        "UNAVAILABLE"
+      ],
+      "error": null,
+      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "listed": true,
+      "lastKnownStatus": "out_of_stock",
+      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "changedAt": "2026-11-22T23:25:20+00:00"
+    },
+    {
+      "id": "PSD001-PSDE01835_51-PS5PSPLUSSC2SDGE",
+      "name": "PlayStation®5-Konsole – 24-monatiges Abonnementbundle für PlayStation®Plus Premium (Modellgruppe – Slim)",
+      "url": "https://www.playstation.com/api/pdp-redirect/?id=PSD001-PSDE01835_51-PS5PSPLUSSC2SDGE&locale=de-de",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/PS5_D_BNDL_TELCO_PREM_EU_231027_1x1-01-12nov26_eu?$native--t$",
+      "refurbished": false,
+      "price": "€789,99",
+      "status": "out_of_stock",
+      "reason": "Нет в наличии у PlayStation",
+      "inventory": "out_of_stock",
+      "ctaTypes": [
+        "UNAVAILABLE"
+      ],
+      "error": null,
+      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "listed": true,
+      "lastKnownStatus": "out_of_stock",
+      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "changedAt": "2026-11-22T23:25:20+00:00"
+    },
+    {
+      "id": "PSD001-PSDE01835_51-PS5ASTROBO5LQOTE",
+      "name": "PlayStation®5 Konsole - ASTRO BOT Bundle (Modellgruppe - Slim)",
+      "url": "https://www.playstation.com/api/pdp-redirect/?id=PSD001-PSDE01835_51-PS5ASTROBO5LQOTE&locale=de-de",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/PS5_D_BNDL_AB_1x1-01-12nov26_eu?$native--t$",
+      "refurbished": false,
+      "price": "€499,99",
+      "status": "out_of_stock",
+      "reason": "Нет в наличии у PlayStation",
+      "inventory": "out_of_stock",
+      "ctaTypes": [
+        "UNAVAILABLE"
+      ],
+      "error": null,
+      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "listed": true,
+      "lastKnownStatus": "out_of_stock",
+      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "changedAt": "2026-11-22T23:25:20+00:00"
+    },
+    {
+      "id": "PSD001-PSDE01835_51-PS5COD6BASNQZJTE",
+      "name": "PlayStation®5 Konsole - Call of Duty®: Black Ops 6 Bundle (Modellgruppe - Slim)",
+      "url": "https://www.playstation.com/api/pdp-redirect/?id=PSD001-PSDE01835_51-PS5COD6BASNQZJTE&locale=de-de",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/PS5_D_BNDL_COD_BO6_1x1-01-12nov26_eu?$native--t$",
+      "refurbished": false,
+      "price": "€549,99",
+      "status": "out_of_stock",
+      "reason": "Нет в наличии у PlayStation",
+      "inventory": "out_of_stock",
+      "ctaTypes": [
+        "UNAVAILABLE"
+      ],
+      "error": null,
+      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "listed": true,
+      "lastKnownStatus": "out_of_stock",
+      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "changedAt": "2026-11-22T23:25:20+00:00"
+    },
+    {
+      "id": "PSD001-PSDE01835_51-PS5FORTNIT3TFSFE",
+      "name": "PlayStation®5 Konsole - Fortnite® Cobalt Star Bundle (Modellgruppe - Slim)",
+      "url": "https://www.playstation.com/api/pdp-redirect/?id=PSD001-PSDE01835_51-PS5FORTNIT3TFSFE&locale=de-de",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/PlayStation_5_Console_Fortnite_Cobalt_Star_Bundle_Slim_3D_1x1-01-24Apr26$en?$native--t$",
+      "refurbished": false,
+      "price": "€549,99",
+      "status": "out_of_stock",
+      "reason": "Нет в наличии у PlayStation",
+      "inventory": "out_of_stock",
+      "ctaTypes": [
+        "UNAVAILABLE"
+      ],
+      "error": null,
+      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "listed": true,
+      "lastKnownStatus": "out_of_stock",
+      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "changedAt": "2026-11-22T23:25:20+00:00"
+    },
+    {
+      "id": "PSD001-PSDE01835_51-PS5CONSOLEDECL5E",
+      "name": "PlayStation®5 Konsole (Modellgruppe - Slim)",
+      "url": "https://www.playstation.com/api/pdp-redirect/?id=PSD001-PSDE01835_51-PS5CONSOLEDECL5E&locale=de-de",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/PS5Console-CFI2100-06-1x1-01-09apr26$en?$native--t$",
+      "refurbished": false,
+      "price": "€549,99",
+      "status": "out_of_stock",
+      "reason": "Нет в наличии у PlayStation",
+      "inventory": "out_of_stock",
+      "ctaTypes": [
+        "UNAVAILABLE"
+      ],
+      "error": null,
+      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "listed": true,
+      "lastKnownStatus": "out_of_stock",
+      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "changedAt": "2026-11-22T23:25:20+00:00"
+    }
+  ],
+  "events": [
+    {
+      "id": "PSD001-PSDE01835_51-PS5GOYGOLDYZWIJE:2026-11-22T23:25:20+00:00",
+      "productId": "PSD001-PSDE01835_51-PS5GOYGOLDYZWIJE",
+      "name": "PlayStation®5 Konsole - Ghost of Yōtei™ Gold Limited Edition Bundle (Modellgruppe - Slim)",
+      "status": "out_of_stock",
+      "at": "2026-11-22T23:25:20+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01840_63-PS5GRADEDCEC7XZE:2026-11-22T23:25:20+00:00",
+      "productId": "PSD001-PSDE01840_63-PS5GRADEDCEC7XZE",
+      "name": "Generalüberholt und Zertifiziert PlayStation®5 Konsole",
+      "status": "blocked",
+      "at": "2026-11-22T23:25:20+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE00233_59-PS5GRADEDCLIZSLE:2026-11-22T23:25:20+00:00",
+      "productId": "PSD001-PSDE00233_59-PS5GRADEDCLIZSLE",
+      "name": "Generalüberholt und Zertifiziert PlayStation®5 Konsole (Modellgruppe - Slim)",
+      "status": "out_of_stock",
+      "at": "2026-11-22T23:25:20+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01929_59-PS5CONSOLETAPQ3E:2026-11-22T23:25:20+00:00",
+      "productId": "PSD001-PSDE01929_59-PS5CONSOLETAPQ3E",
+      "name": "Paket: PlayStation®5 Konsole 1 TB - zwei DualSense® Wireless Controller",
+      "status": "blocked",
+      "at": "2026-11-22T23:25:20+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01835_51-PS5CONSOLEXQCDWE:2026-11-22T23:25:20+00:00",
+      "productId": "PSD001-PSDE01835_51-PS5CONSOLEXQCDWE",
+      "name": "Paket: PlayStation®5 Konsole + zwei DualSense™ Wireless Controller (Modellgruppe - Slim)",
+      "status": "out_of_stock",
+      "at": "2026-11-22T23:25:20+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01929_59-PS5CONSOLEHB2OYE:2026-11-22T23:25:20+00:00",
+      "productId": "PSD001-PSDE01929_59-PS5CONSOLEHB2OYE",
+      "name": "PlayStation®5 Konsole - 1 TB",
+      "status": "blocked",
+      "at": "2026-11-22T23:25:20+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01929_59-PS5CONSOLEKOMN4E:2026-11-22T23:25:20+00:00",
+      "productId": "PSD001-PSDE01929_59-PS5CONSOLEKOMN4E",
+      "name": "PlayStation®5 Konsole 1 TB - EA SPORTS FC™ 26 Bundle",
+      "status": "out_of_stock",
+      "at": "2026-11-22T23:25:20+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01929_59-PS5CONSOLETBMPGE:2026-11-22T23:25:20+00:00",
+      "productId": "PSD001-PSDE01929_59-PS5CONSOLETBMPGE",
+      "name": "PlayStation®5 Konsole 1 TB - Fortnite Blühendes Chaos Bundle",
+      "status": "out_of_stock",
+      "at": "2026-11-22T23:25:20+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01835_51-PS5PSPLUSSC2SDGE:2026-11-22T23:25:20+00:00",
+      "productId": "PSD001-PSDE01835_51-PS5PSPLUSSC2SDGE",
+      "name": "PlayStation®5-Konsole – 24-monatiges Abonnementbundle für PlayStation®Plus Premium (Modellgruppe – Slim)",
+      "status": "out_of_stock",
+      "at": "2026-11-22T23:25:20+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01835_51-PS5ASTROBO5LQOTE:2026-11-22T23:25:20+00:00",
+      "productId": "PSD001-PSDE01835_51-PS5ASTROBO5LQOTE",
+      "name": "PlayStation®5 Konsole - ASTRO BOT Bundle (Modellgruppe - Slim)",
+      "status": "out_of_stock",
+      "at": "2026-11-22T23:25:20+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01835_51-PS5COD6BASNQZJTE:2026-11-22T23:25:20+00:00",
+      "productId": "PSD001-PSDE01835_51-PS5COD6BASNQZJTE",
+      "name": "PlayStation®5 Konsole - Call of Duty®: Black Ops 6 Bundle (Modellgruppe - Slim)",
+      "status": "out_of_stock",
+      "at": "2026-11-22T23:25:20+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01835_51-PS5FORTNIT3TFSFE:2026-11-22T23:25:20+00:00",
+      "productId": "PSD001-PSDE01835_51-PS5FORTNIT3TFSFE",
+      "name": "PlayStation®5 Konsole - Fortnite® Cobalt Star Bundle (Modellgruppe - Slim)",
+      "status": "out_of_stock",
+      "at": "2026-11-22T23:25:20+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01835_51-PS5CONSOLEDECL5E:2026-11-22T23:25:20+00:00",
+      "productId": "PSD001-PSDE01835_51-PS5CONSOLEDECL5E",
+      "name": "PlayStation®5 Konsole (Modellgruppe - Slim)",
+      "status": "out_of_stock",
+      "at": "2026-11-22T23:25:20+00:00",
+      "notify": false,
+      "sentAt": null
+    }
+  ],
+  "version": 1,
+  "source": "https://www.playstation.com/de-de/consoles/ps5/shop-all/",
+  "intervalMinutes": 5,
+  "attemptedAt": "2026-11-22T23:25:20+00:00",
+  "catalogueTotal": 27,
+  "health": "ok",
+  "error": null,
+  "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+  "telegram": {
+    "configured": true,
+    "error": null,
+    "welcomeSentAt": "2026-11-22T23:25:32+00:00",
+    "lastSentAt": "2026-11-22T23:25:32+00:00"
+  }
+}
