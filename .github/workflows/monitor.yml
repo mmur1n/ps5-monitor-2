@@ -1,0 +1,96 @@
+name: PS5 stock monitor
+
+on:
+  schedule:
+    - cron: '2-57/5 * * * *'
+  workflow_dispatch:
+    inputs:
+      test_telegram:
+        description: Send a Telegram connection test
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+
+# Serialise the full scan, state commit and deployment. Never cancel an alert in flight.
+concurrency:
+  group: ps5-monitor
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  monitor:
+    # Prevent accidental use of paid private-repository minutes.
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+      - name: Run regression checks
+        run: python3 -m unittest discover -s tests -v
+      - name: Restore last observation
+        shell: bash
+        run: |
+          mkdir -p state
+          git ls-remote --heads origin monitor-data > /tmp/ps5-remote-ref
+          if [ -s /tmp/ps5-remote-ref ]; then
+            git fetch --depth=1 origin monitor-data
+            git show FETCH_HEAD:state.json > state/state.json
+          fi
+      - name: Check consoles and send notifications
+        id: scan
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TEST_TELEGRAM: ${{ inputs.test_telegram }}
+        run: |
+          if [ "$TEST_TELEGRAM" = "true" ]; then
+            python3 -m monitor.run --test-telegram
+          else
+            python3 -m monitor.run
+          fi
+      - name: Save observations for the next run
+        # Save even on a partial scan / failed Telegram send; do not touch main.
+        if: ${{ !cancelled() && hashFiles('state/state.json') != '' }}
+        shell: bash
+        run: |
+          git config user.name 'PS5 Monitor'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git worktree add --detach /tmp/ps5-observations
+          cd /tmp/ps5-observations
+          git ls-remote --heads origin monitor-data > /tmp/ps5-remote-ref
+          if [ -s /tmp/ps5-remote-ref ]; then
+            git fetch --depth=1 origin monitor-data
+            git checkout -B monitor-data FETCH_HEAD
+          else
+            git checkout --orphan monitor-data
+            git rm -rf .
+          fi
+          cp "$GITHUB_WORKSPACE/state/state.json" state.json
+          git add state.json
+          git commit -m 'Update PS5 observations'
+          git push origin HEAD:monitor-data
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: web
+          retention-days: 1
+      - name: Publish dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Report scan failure
+        if: steps.scan.outcome == 'failure'
+        run: |
+          echo 'Source or Telegram check failed. The dashboard shows details; last good data is preserved.'
+          exit 1
