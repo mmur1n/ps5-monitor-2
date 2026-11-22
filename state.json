@@ -8,16 +8,19 @@
       "refurbished": false,
       "price": "€599,99",
       "status": "out_of_stock",
-      "reason": "Нет в наличии у PlayStation",
+      "reason": "Покупка недоступна",
       "inventory": "out_of_stock",
       "ctaTypes": [
         "UNAVAILABLE"
       ],
+      "ctaActions": [
+        "OPEN_ERROR_DIALOG"
+      ],
       "error": null,
-      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "checkedAt": "2026-11-22T23:38:47+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "lastSuccessAt": "2026-11-22T23:38:47+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -28,16 +31,19 @@
       "refurbished": true,
       "price": "€519,99",
       "status": "blocked",
-      "reason": "Магазин сообщает о запасе, но покупка недоступна",
+      "reason": "Отметка наличия есть, но покупка недоступна",
       "inventory": "in_stock",
       "ctaTypes": [
         "UNAVAILABLE"
       ],
+      "ctaActions": [
+        "OPEN_ERROR_DIALOG"
+      ],
       "error": null,
-      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "checkedAt": "2026-11-22T23:38:47+00:00",
       "listed": true,
       "lastKnownStatus": "blocked",
-      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "lastSuccessAt": "2026-11-22T23:38:47+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -48,16 +54,19 @@
       "refurbished": true,
       "price": "€549,99",
       "status": "out_of_stock",
-      "reason": "Нет в наличии у PlayStation",
+      "reason": "Покупка недоступна",
       "inventory": "out_of_stock",
       "ctaTypes": [
         "UNAVAILABLE"
       ],
+      "ctaActions": [
+        "OPEN_ERROR_DIALOG"
+      ],
       "error": null,
-      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "checkedAt": "2026-11-22T23:38:47+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "lastSuccessAt": "2026-11-22T23:38:47+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -68,16 +77,19 @@
       "refurbished": false,
       "price": "€699,99",
       "status": "blocked",
-      "reason": "Магазин сообщает о запасе, но покупка недоступна",
+      "reason": "Отметка наличия есть, но покупка недоступна",
       "inventory": "in_stock",
       "ctaTypes": [
         "UNAVAILABLE"
       ],
+      "ctaActions": [
+        "OPEN_ERROR_DIALOG"
+      ],
       "error": null,
-      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "checkedAt": "2026-11-22T23:38:47+00:00",
       "listed": true,
       "lastKnownStatus": "blocked",
-      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "lastSuccessAt": "2026-11-22T23:38:47+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -88,16 +100,19 @@
       "refurbished": false,
       "price": "€609,99",
       "status": "out_of_stock",
-      "reason": "Нет в наличии у PlayStation",
+      "reason": "Покупка недоступна",
       "inventory": "out_of_stock",
       "ctaTypes": [
         "UNAVAILABLE"
       ],
+      "ctaActions": [
+        "OPEN_ERROR_DIALOG"
+      ],
       "error": null,
-      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "checkedAt": "2026-11-22T23:38:47+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "lastSuccessAt": "2026-11-22T23:38:47+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -108,16 +123,19 @@
       "refurbished": false,
       "price": "€649,99",
       "status": "blocked",
-      "reason": "Магазин сообщает о запасе, но покупка недоступна",
+      "reason": "Отметка наличия есть, но покупка недоступна",
       "inventory": "in_stock",
       "ctaTypes": [
         "UNAVAILABLE"
       ],
+      "ctaActions": [
+        "OPEN_ERROR_DIALOG"
+      ],
       "error": null,
-      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "checkedAt": "2026-11-22T23:38:47+00:00",
       "listed": true,
       "lastKnownStatus": "blocked",
-      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "lastSuccessAt": "2026-11-22T23:38:47+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -128,16 +146,19 @@
       "refurbished": false,
       "price": "€549,99",
       "status": "out_of_stock",
-      "reason": "Нет в наличии у PlayStation",
+      "reason": "Покупка недоступна",
       "inventory": "out_of_stock",
       "ctaTypes": [
         "UNAVAILABLE"
       ],
+      "ctaActions": [
+        "OPEN_ERROR_DIALOG"
+      ],
       "error": null,
-      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "checkedAt": "2026-11-22T23:38:47+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "lastSuccessAt": "2026-11-22T23:38:47+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -148,16 +169,19 @@
       "refurbished": false,
       "price": "€549,99",
       "status": "out_of_stock",
-      "reason": "Нет в наличии у PlayStation",
+      "reason": "Покупка недоступна",
       "inventory": "out_of_stock",
       "ctaTypes": [
         "UNAVAILABLE"
       ],
+      "ctaActions": [
+        "OPEN_ERROR_DIALOG"
+      ],
       "error": null,
-      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "checkedAt": "2026-11-22T23:38:47+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "lastSuccessAt": "2026-11-22T23:38:47+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -168,16 +192,19 @@
       "refurbished": false,
       "price": "€789,99",
       "status": "out_of_stock",
-      "reason": "Нет в наличии у PlayStation",
+      "reason": "Покупка недоступна",
       "inventory": "out_of_stock",
       "ctaTypes": [
         "UNAVAILABLE"
       ],
+      "ctaActions": [
+        "OPEN_ERROR_DIALOG"
+      ],
       "error": null,
-      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "checkedAt": "2026-11-22T23:38:47+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "lastSuccessAt": "2026-11-22T23:38:47+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -188,16 +215,19 @@
       "refurbished": false,
       "price": "€499,99",
       "status": "out_of_stock",
-      "reason": "Нет в наличии у PlayStation",
+      "reason": "Покупка недоступна",
       "inventory": "out_of_stock",
       "ctaTypes": [
         "UNAVAILABLE"
       ],
+      "ctaActions": [
+        "OPEN_ERROR_DIALOG"
+      ],
       "error": null,
-      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "checkedAt": "2026-11-22T23:38:47+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "lastSuccessAt": "2026-11-22T23:38:47+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -208,16 +238,19 @@
       "refurbished": false,
       "price": "€549,99",
       "status": "out_of_stock",
-      "reason": "Нет в наличии у PlayStation",
+      "reason": "Покупка недоступна",
       "inventory": "out_of_stock",
       "ctaTypes": [
         "UNAVAILABLE"
       ],
+      "ctaActions": [
+        "OPEN_ERROR_DIALOG"
+      ],
       "error": null,
-      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "checkedAt": "2026-11-22T23:38:47+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "lastSuccessAt": "2026-11-22T23:38:47+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -228,16 +261,19 @@
       "refurbished": false,
       "price": "€549,99",
       "status": "out_of_stock",
-      "reason": "Нет в наличии у PlayStation",
+      "reason": "Покупка недоступна",
       "inventory": "out_of_stock",
       "ctaTypes": [
         "UNAVAILABLE"
       ],
+      "ctaActions": [
+        "OPEN_ERROR_DIALOG"
+      ],
       "error": null,
-      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "checkedAt": "2026-11-22T23:38:47+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "lastSuccessAt": "2026-11-22T23:38:47+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -248,16 +284,19 @@
       "refurbished": false,
       "price": "€549,99",
       "status": "out_of_stock",
-      "reason": "Нет в наличии у PlayStation",
+      "reason": "Покупка недоступна",
       "inventory": "out_of_stock",
       "ctaTypes": [
         "UNAVAILABLE"
       ],
+      "ctaActions": [
+        "OPEN_ERROR_DIALOG"
+      ],
       "error": null,
-      "checkedAt": "2026-11-22T23:25:20+00:00",
+      "checkedAt": "2026-11-22T23:38:47+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+      "lastSuccessAt": "2026-11-22T23:38:47+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     }
   ],
@@ -383,11 +422,11 @@
   "version": 1,
   "source": "https://www.playstation.com/de-de/consoles/ps5/shop-all/",
   "intervalMinutes": 5,
-  "attemptedAt": "2026-11-22T23:25:20+00:00",
+  "attemptedAt": "2026-11-22T23:38:47+00:00",
   "catalogueTotal": 27,
   "health": "ok",
   "error": null,
-  "lastSuccessAt": "2026-11-22T23:25:20+00:00",
+  "lastSuccessAt": "2026-11-22T23:38:47+00:00",
   "telegram": {
     "configured": true,
     "error": null,
