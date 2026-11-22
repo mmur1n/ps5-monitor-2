@@ -112,6 +112,8 @@ def main():
     args = parser.parse_args()
     # Corrupt state is a hard failure: silently starting again could duplicate alerts.
     state = json.loads(args.state.read_text()) if args.state.exists() else {}
+    state.setdefault("products", [])
+    state.setdefault("events", [])
     timestamp = now()
     state.update({"version": 1, "source": SOURCE_URL, "intervalMinutes": 5, "attemptedAt": timestamp})
     try:
