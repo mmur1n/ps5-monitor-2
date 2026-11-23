@@ -1,0 +1,10 @@
+name = "ps5-monitor-2-scheduler"
+main = "worker.mjs"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+[triggers]
+crons = ["*/5 * * * *"]
+
+# Create GITHUB_WORKFLOW_TOKEN as an encrypted Worker secret, never as a variable.
+# The Free plan is sufficient: 288 scheduled invocations per day, one GitHub request each.

@@ -124,6 +124,13 @@ def main():
     state.setdefault("events", [])
     timestamp = now()
     state.update({"version": 1, "source": SOURCE_URL, "intervalMinutes": 5, "attemptedAt": timestamp})
+    trigger = os.environ.get("MONITOR_TRIGGER", "manual")
+    state["triggerSource"] = trigger if trigger in {"cloudflare", "manual", "push", "schedule"} else "manual"
+    scheduled_at = os.environ.get("MONITOR_SCHEDULED_AT", "")
+    try:
+        state["scheduledAt"] = datetime.fromisoformat(scheduled_at.replace("Z", "+00:00")).isoformat()
+    except ValueError:
+        state["scheduledAt"] = None
     try:
         products, total = scan()
         state = reconcile(state, products, timestamp)
