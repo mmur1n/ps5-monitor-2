@@ -17,10 +17,10 @@
         "OPEN_ERROR_DIALOG"
       ],
       "error": null,
-      "checkedAt": "2026-11-23T14:29:03+00:00",
+      "checkedAt": "2026-11-24T01:49:10+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-23T14:29:03+00:00",
+      "lastSuccessAt": "2026-11-24T01:49:10+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -40,10 +40,10 @@
         "OPEN_ERROR_DIALOG"
       ],
       "error": null,
-      "checkedAt": "2026-11-23T14:29:03+00:00",
+      "checkedAt": "2026-11-24T01:49:10+00:00",
       "listed": true,
       "lastKnownStatus": "blocked",
-      "lastSuccessAt": "2026-11-23T14:29:03+00:00",
+      "lastSuccessAt": "2026-11-24T01:49:10+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -63,10 +63,10 @@
         "OPEN_ERROR_DIALOG"
       ],
       "error": null,
-      "checkedAt": "2026-11-23T14:29:03+00:00",
+      "checkedAt": "2026-11-24T01:49:10+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-23T14:29:03+00:00",
+      "lastSuccessAt": "2026-11-24T01:49:10+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -86,10 +86,10 @@
         "OPEN_ERROR_DIALOG"
       ],
       "error": null,
-      "checkedAt": "2026-11-23T14:29:03+00:00",
+      "checkedAt": "2026-11-24T01:49:10+00:00",
       "listed": true,
       "lastKnownStatus": "blocked",
-      "lastSuccessAt": "2026-11-23T14:29:03+00:00",
+      "lastSuccessAt": "2026-11-24T01:49:10+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -109,10 +109,10 @@
         "OPEN_ERROR_DIALOG"
       ],
       "error": null,
-      "checkedAt": "2026-11-23T14:29:03+00:00",
+      "checkedAt": "2026-11-24T01:49:10+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-23T14:29:03+00:00",
+      "lastSuccessAt": "2026-11-24T01:49:10+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -132,10 +132,10 @@
         "OPEN_ERROR_DIALOG"
       ],
       "error": null,
-      "checkedAt": "2026-11-23T14:29:03+00:00",
+      "checkedAt": "2026-11-24T01:49:10+00:00",
       "listed": true,
       "lastKnownStatus": "blocked",
-      "lastSuccessAt": "2026-11-23T14:29:03+00:00",
+      "lastSuccessAt": "2026-11-24T01:49:10+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -145,21 +145,15 @@
       "image": "https://gmedia.playstation.com/is/image/SIEPDC/EAFC_PlayStation5Console-3D-1x1-01-11sep26_en?$native--t$",
       "refurbished": false,
       "price": "€549,99",
-      "status": "out_of_stock",
-      "reason": "Покупка недоступна",
-      "inventory": "out_of_stock",
-      "ctaTypes": [
-        "UNAVAILABLE"
-      ],
-      "ctaActions": [
-        "OPEN_ERROR_DIALOG"
-      ],
-      "error": null,
-      "checkedAt": "2026-11-23T14:29:03+00:00",
+      "status": "unknown",
+      "inventory": "unknown",
+      "reason": "Не удалось проверить карточку",
+      "error": "Ошибка чтения товара",
+      "checkedAt": "2026-11-24T01:49:10+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
       "lastSuccessAt": "2026-11-23T14:29:03+00:00",
-      "changedAt": "2026-11-22T23:25:20+00:00"
+      "changedAt": "2026-11-24T01:49:10+00:00"
     },
     {
       "id": "PSD001-PSDE01929_59-PS5CONSOLETBMPGE",
@@ -168,21 +162,15 @@
       "image": "https://gmedia.playstation.com/is/image/SIEPDC/Fortnite_PlayStation5Console-3D-1x1-01-11sep26_en?$native--t$",
       "refurbished": false,
       "price": "€549,99",
-      "status": "out_of_stock",
-      "reason": "Покупка недоступна",
-      "inventory": "out_of_stock",
-      "ctaTypes": [
-        "UNAVAILABLE"
-      ],
-      "ctaActions": [
-        "OPEN_ERROR_DIALOG"
-      ],
-      "error": null,
-      "checkedAt": "2026-11-23T14:29:03+00:00",
+      "status": "unknown",
+      "inventory": "unknown",
+      "reason": "Не удалось проверить карточку",
+      "error": "Ошибка чтения товара",
+      "checkedAt": "2026-11-24T01:49:10+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
       "lastSuccessAt": "2026-11-23T14:29:03+00:00",
-      "changedAt": "2026-11-22T23:25:20+00:00"
+      "changedAt": "2026-11-24T01:49:10+00:00"
     },
     {
       "id": "PSD001-PSDE01835_51-PS5PSPLUSSC2SDGE",
@@ -191,21 +179,15 @@
       "image": "https://gmedia.playstation.com/is/image/SIEPDC/PS5_D_BNDL_TELCO_PREM_EU_231027_1x1-01-12nov26_eu?$native--t$",
       "refurbished": false,
       "price": "€789,99",
-      "status": "out_of_stock",
-      "reason": "Покупка недоступна",
-      "inventory": "out_of_stock",
-      "ctaTypes": [
-        "UNAVAILABLE"
-      ],
-      "ctaActions": [
-        "OPEN_ERROR_DIALOG"
-      ],
-      "error": null,
-      "checkedAt": "2026-11-23T14:29:03+00:00",
+      "status": "unknown",
+      "inventory": "unknown",
+      "reason": "Не удалось проверить карточку",
+      "error": "Ошибка чтения товара",
+      "checkedAt": "2026-11-24T01:49:10+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
       "lastSuccessAt": "2026-11-23T14:29:03+00:00",
-      "changedAt": "2026-11-22T23:25:20+00:00"
+      "changedAt": "2026-11-24T01:49:10+00:00"
     },
     {
       "id": "PSD001-PSDE01835_51-PS5ASTROBO5LQOTE",
@@ -224,10 +206,10 @@
         "OPEN_ERROR_DIALOG"
       ],
       "error": null,
-      "checkedAt": "2026-11-23T14:29:03+00:00",
+      "checkedAt": "2026-11-24T01:49:10+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-23T14:29:03+00:00",
+      "lastSuccessAt": "2026-11-24T01:49:10+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -247,10 +229,10 @@
         "OPEN_ERROR_DIALOG"
       ],
       "error": null,
-      "checkedAt": "2026-11-23T14:29:03+00:00",
+      "checkedAt": "2026-11-24T01:49:10+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-23T14:29:03+00:00",
+      "lastSuccessAt": "2026-11-24T01:49:10+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -270,10 +252,10 @@
         "OPEN_ERROR_DIALOG"
       ],
       "error": null,
-      "checkedAt": "2026-11-23T14:29:03+00:00",
+      "checkedAt": "2026-11-24T01:49:10+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-23T14:29:03+00:00",
+      "lastSuccessAt": "2026-11-24T01:49:10+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     },
     {
@@ -293,10 +275,10 @@
         "OPEN_ERROR_DIALOG"
       ],
       "error": null,
-      "checkedAt": "2026-11-23T14:29:03+00:00",
+      "checkedAt": "2026-11-24T01:49:10+00:00",
       "listed": true,
       "lastKnownStatus": "out_of_stock",
-      "lastSuccessAt": "2026-11-23T14:29:03+00:00",
+      "lastSuccessAt": "2026-11-24T01:49:10+00:00",
       "changedAt": "2026-11-22T23:25:20+00:00"
     }
   ],
@@ -417,15 +399,42 @@
       "at": "2026-11-22T23:25:20+00:00",
       "notify": false,
       "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01929_59-PS5CONSOLEKOMN4E:2026-11-24T01:49:10+00:00",
+      "productId": "PSD001-PSDE01929_59-PS5CONSOLEKOMN4E",
+      "name": "PlayStation®5 Konsole 1 TB - EA SPORTS FC™ 26 Bundle",
+      "status": "unknown",
+      "at": "2026-11-24T01:49:10+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01929_59-PS5CONSOLETBMPGE:2026-11-24T01:49:10+00:00",
+      "productId": "PSD001-PSDE01929_59-PS5CONSOLETBMPGE",
+      "name": "PlayStation®5 Konsole 1 TB - Fortnite Blühendes Chaos Bundle",
+      "status": "unknown",
+      "at": "2026-11-24T01:49:10+00:00",
+      "notify": false,
+      "sentAt": null
+    },
+    {
+      "id": "PSD001-PSDE01835_51-PS5PSPLUSSC2SDGE:2026-11-24T01:49:10+00:00",
+      "productId": "PSD001-PSDE01835_51-PS5PSPLUSSC2SDGE",
+      "name": "PlayStation®5-Konsole – 24-monatiges Abonnementbundle für PlayStation®Plus Premium (Modellgruppe – Slim)",
+      "status": "unknown",
+      "at": "2026-11-24T01:49:10+00:00",
+      "notify": false,
+      "sentAt": null
     }
   ],
   "version": 1,
   "source": "https://www.playstation.com/de-de/consoles/ps5/shop-all/",
   "intervalMinutes": 5,
-  "attemptedAt": "2026-11-23T14:29:03+00:00",
+  "attemptedAt": "2026-11-24T01:49:10+00:00",
   "catalogueTotal": 28,
-  "health": "ok",
-  "error": null,
+  "health": "partial",
+  "error": "Не проверено товаров: 3",
   "lastSuccessAt": "2026-11-23T14:29:03+00:00",
   "telegram": {
     "configured": true,
